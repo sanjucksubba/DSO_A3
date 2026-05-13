@@ -1,0 +1,30 @@
+{
+  "name": "dso101_a2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "echo Build complete",
+    "test": "jest --ci --reporters=default --reporters=jest-junit --testPathPattern=backend"
+  },
+  "jest": {
+    "testMatch": ["**/backend/**/*.test.js"],
+    "reporters": [
+      "default",
+      ["jest-junit", {"outputFile": "junit.xml"}]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjucksubba/DSO101_A2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
